@@ -43,7 +43,7 @@ body{
 .form{
 	background: transparent;
 	color: white;
-	box-sizing: border-box;
+	box-sizing: inherit;
 	display: flex;
 	flex-direction: column;
 	width: 250px;
