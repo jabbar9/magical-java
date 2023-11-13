@@ -1,0 +1,36 @@
+h1{
+    color: black;
+    font-size: xx-large;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+input{
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #0078ff;
+}
+#msg{
+    margin-top: 60px;
+
+}
+button{
+    padding: 20px,32px;
+    font-size: 40px;
+    background:#f9004d ;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 30px;
+}
+body{
+    color: black;
+}
