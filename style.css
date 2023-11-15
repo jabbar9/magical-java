@@ -38,91 +38,7 @@ html, body {
 	height: 60x;
 }
 
-.right{
-	float: left;
-}
 
-
-.right ul{
-	list-style: none;
-	padding: 1em 3em;
-}
-
-.right ul li {
-	display: inline-block;
-}
-
-
-.right ul li a{
-	text-decoration: none;
-	color:black;
-    font-weight: 500;
-    padding: 10px 16px; 
-
-}
-
-.right li:nth-child(2) a{
-	border: 1px solid black;
-	border-radius: 4px;
-}
-
-.header{
-	text-align: center;
-	position:absolute;
-	top: 15%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.header h1{
-	color: black;
-	font-size: 45px;
-	font-style: italic;
-}
-
-.header p{
-	color:black;
-	font-size: 22px;
-	margin-bottom: 20px;
-	font-style: italic;
-}
-
-
-.form{
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-input{
-	width: 100%;
-	margin: 20px 0;
-	background: rgba(0,0,0,0);
-	border: none;
-	border-bottom: 1px solid #0078ff; 
-}
-
-#msg{
-	margin-top: 60px;
-}
-
- -webkit-input-placeholder{
-	color: #EAEAEA;
-	font-size: 12px;
-	letter-spacing: 2px;
-}
-
-button{
-	padding: 20px 32px;
-	font-size: 16px;
-	background: #0078ff;
-	border: none;
-	border-radius: 4px;
-	margin-top: 30px;
-	color: #fff;
-} 
 /* The sidepanel menu */
 .sidepanel {
 	height: 250px; /* Specify a height */
@@ -228,15 +144,15 @@ button{
 
 /* welcome to magical world line AND logo */
 
- .H1 {
+ /* .H1 {
     font-size: 120px;
     color: white;
     font-weight: 700;
 	text-align: center;
-}
+} */
 
 
-/* animation goal round */
+animation goal round
 .svg-frame {
 	position: relative;
 	width: 300px;
@@ -285,7 +201,7 @@ button{
   #inner1 {
 	animation: rotate16 4s ease-in-out infinite alternate;
 	transform-origin: center;
-  }
+  } */
   /* #flashlight {
 	position: fixed;
 	left: -100%;
@@ -341,7 +257,7 @@ button{
 
   
  
-  @keyframes rotate16 {
+   @keyframes rotate16 {
 	to {
 	  transform: rotate(360deg);
 	}
@@ -377,19 +293,385 @@ button{
  
 
 
- 
- 
-
-  
-   
-  
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
- 
-  
- 
-
   
 
-  
 
+  /* .card:hover .title_container {
+  transform: translate3d(0%, -50px, 100px);
+} */
+
+
+#cursor {
+	position: absolute;
+	z-index: 9999;
+	transform: rotate(-12deg);
+	top: 0px;
+	pointer-events: none;
+  }
   
+  .name_home {
+	color: transparent;
+	font-size: 120px;
+  
+	text-shadow: 0 1px #000000, -1px 0 #c0cbff, -1px 2px #092B35, -2px 1px #c0cbff,
+	  -2px 3px #000000, -3px 2px #c0cbff, -3px 4px #313131, -4px 3px #c0cbff,
+	  -4px 5px #000000, -5px 4px #c0cbff, -5px 6px #313131, -6px 5px #c0cbff,
+	  -6px 7px #030303, -7px 6px #c0cbff, -7px 8px #313131, -8px 7px #c0cbff;
+  }
+  
+  .home-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 100%;
+	z-index: 888;
+  
+  
+  }
+  
+  .home-text img {
+	width: 50%;
+  }
+  
+  #canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+  }
+  
+  .navbar {
+	background: #fff;
+	width: 50%;
+	border-radius: 20px;
+	font-family: 'Oswald', sans-serif;
+	z-index: 9998;
+  
+  }
+  
+  .home-nav {
+	left: 25%;
+  }
+  
+  nav li a {
+	cursor: none;
+  }
+  
+  
+  .card {
+  
+	height: var(--card-height);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 0;
+	perspective: 2500px;
+	background-color: transparent;
+	margin: 60px;
+  }
+  
+  .cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .wrapper {
+	transition: all 0.5s;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+  }
+  
+  .card:hover .wrapper {
+	transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+	box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .wrapper::before,
+  .wrapper::after {
+	content: "";
+	opacity: 0;
+	width: 100%;
+	height: 80px;
+	transition: all 0.5s;
+	position: absolute;
+	left: 0;
+  }
+  
+  .wrapper::before {
+	top: 0;
+	height: 100%;
+	background-image: linear-gradient(to top,
+		transparent 46%,
+		rgba(12, 13, 19, 0.5) 68%,
+		rgba(12, 13, 19) 97%);
+  }
+  
+  .wrapper::after {
+	bottom: 0;
+	opacity: 1;
+	background-image: linear-gradient(to bottom,
+		transparent 46%,
+		rgba(12, 13, 19, 0.5) 68%,
+		rgba(12, 13, 19) 97%);
+  }
+  
+  .card:hover .wrapper::before,
+  .wrapper::after {
+	opacity: 1;
+  }
+  
+  .card:hover .wrapper::after {
+	height: 120px;
+  }
+  
+  .title {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	transition: transform 0.5s;
+	color: #fff;
+	margin-bottom: 2px;
+	font-family: harryFont;
+  
+  }
+  
+  .title_container {
+	margin-top: 200px;
+	text-align: center;
+  }
+  
+  .title-sub {
+	color: #fff;
+	text-align: center;
+  }
+  
+  /* .card:hover .title_container {
+	transform: translate3d(0%, -50px, 100px);
+  } */
+  
+  
+  .character {
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+	position: absolute;
+	z-index: -1;
+  }
+  
+  .card:hover .character {
+	opacity: 1;
+	transform: translate3d(0%, -30%, 100px);
+  }
+  
+  .container-card {
+	width: 100%;
+	height: 100vh;
+	margin-top: 80px;
+	display: grid;
+  
+  
+  }
+  
+  .character-container {
+	background: url(mmmm.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: black;
+	background-attachment: fixed;
+	cursor: none;
+	overflow-x: hidden;
+	font-family: 'Oswald', sans-serif;
+  }
+  
+  .magical-container {
+	background: url(back4.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	cursor: none;
+	overflow-x: hidden;
+	font-family: 'Oswald', sans-serif;
+  }
+  
+  .magical_objects_txt {
+	background: rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10.5px);
+	-webkit-backdrop-filter: blur(10.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 50px;
+  
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #ffffff;
+  }
+  
+  .underline {
+	background: #fff;
+	height: 2px;
+	width: 50%;
+	display: block;
+	margin-bottom: 10px;
+	border-radius: 10px;
+  }
+  
+  .img-center {
+	margin-top: auto;
+	margin-bottom: auto;
+  }
+  
+  .logo-nav {
+	width: 150px;
+	position: fixed;
+	margin-left: 10px;
+	z-index: 10000;
+	top: 10px;
+  }
+  
+  .title_magical_object {
+	font-family: harryFont;
+  
+  }
+  
+  .copyright {
+	color: #fff;
+  }
+  
+  .loader {
+	width: 48px;
+	height: 48px;
+	border: 3px dotted #FFF;
+	border-style: solid solid dotted dotted;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	animation: rotation 2s linear infinite;
+  }
+  
+  .loader::after {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: 3px dotted #52566d;
+	border-style: solid solid dotted;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	animation: rotationBack 1s linear infinite;
+	transform-origin: center center;
+  }
+  
+  .magical_container {
+	overflow-x: hidden;
+  }
+  
+  @keyframes rotation {
+	0% {
+	  transform: rotate(0deg);
+	}
+  
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  @keyframes rotationBack {
+	0% {
+	  transform: rotate(0deg);
+	}
+  
+	100% {
+	  transform: rotate(-360deg);
+	}
+  }
+  
+  #pre-loader {
+	background: #000000;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100000;
+	position: fixed;
+	top: 0;
+  
+  }
+  
+  .mobile_nav {
+	position: fixed;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 50px;
+	z-index: 10000;
+	background: #fff;
+	border-radius: 50px;
+	display: none;
+  }
+  
+  .mobile_nav-item.active a {
+	background: #000000;
+  }
+  
+  .mobile_nav-item.active a svg {
+	color: #fff;
+	fill: #fff;
+  }
+  
+  .mobile_nav-item.active a {
+	padding: 10px;
+	display: flex;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .mobile_nav-item.active a svg {
+	width: 20px;
+	height: 20px;
+  }
+  
+  @media only screen and (max-width:600px) {
+	#cursor {
+	  display: none;
+  
+	}
+  
+	.open_title_img {
+	  width: 360px !important;
+	}
+  
+	.navbar {
+	  display: none;
+	}
+  
+	.copyright {
+	  display: none;
+	}
+  
+	.magical_row {
+	  padding: 10px;
+	}
+  
+	.mobile_nav {
+	  display: block;
+	}
+  }

@@ -1,36 +1,113 @@
-h1{
-    color: black;
-    font-size: xx-large;
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;	
 }
-.form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
 
-}
-input{
-    width: 100%;
-    margin: 20px 0;
-    background: rgba(0, 0, 0, 0);
-    border: none;
-    border-bottom: 1px solid #0078ff;
-}
-#msg{
-    margin-top: 60px;
-
-}
-button{
-    padding: 20px,32px;
-    font-size: 40px;
-    background:#f9004d ;
-    border: none;
-    border-radius: 4px;
-    margin-top: 30px;
-    color: #fff;
-    border-radius: 30px;
-}
 body{
+	
+	
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: inherit;
+	background-attachment: fixed;
+	display: table;
+	font-family: Quicksand;
     color: black;
+
+
+	
+} 
+.right{
+	float: left;
 }
+
+
+.right ul{
+	list-style: none;
+	padding: 1em 3em;
+}
+
+.right ul li {
+	display: inline-table;
+}
+
+.right ul li a{
+	text-decoration: none;
+	color:white;
+    background: #0078ff;
+    font-weight: 500;
+    padding: 10px 16px; 
+
+}
+
+.right li:nth-child(2) a{
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.header{
+	text-align: center;
+	position:absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header h1{
+	color: black;
+	font-size: 45px;
+	font-style: italic;
+}
+
+.header p{
+	color:black;
+	font-size: 22px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+
+.form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center ;
+    color: blueviolet;
+}
+
+input{
+   
+	width: 100%;
+	margin: 20px 0;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 2px solid brown; 
+    
+    
+}
+
+
+#msg{
+	margin-top: 60px;
+}
+
+ -webkit-input-placeholder{
+	color: #EAEAEA;
+	font-size: 12px;
+	letter-spacing: 2px;
+  
+}
+
+button{
+	padding: 20px 32px;
+	font-size: 16px;
+	background: #0078ff;
+	border: none;
+	border-radius: 4px;
+	margin-top: 30px;
+	color: #fff;
+} 
