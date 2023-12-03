@@ -21,7 +21,7 @@ function mousemove(event) {
   var mouse_y = event.clientY;
 
   var fl = document.getElementById('flashlight');
-  fl.style.transform = 'translate(calc(' + mouse_x + 'px - 50vw), ' + 'calc(' + mouse_y + 'px - 50vh))';
+  fl.style.transform = 'translate(calc('+ mouse_x + 'px - 50vw), ' + 'calc(' + mouse_y + 'px - 50vh))';
 }
 
 init();
