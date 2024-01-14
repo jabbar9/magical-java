@@ -89,7 +89,7 @@ html, body {
   }
   
   .openbtn:hover {
-	background-color: #444;
+	background-color: wheat;
   }/* The sidepanel menu */
 .sidepanel {
   height: 250px; /* Specify a height */
