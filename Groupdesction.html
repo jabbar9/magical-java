@@ -1,156 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="group.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="group.css">
+    <style>
+        body {
+            background: url("firefilesgif.gif") no-repeat;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        h2 {
+            color: skyblue;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn.active {
+            background-color: #007BFF;
+        }
+        a {
+         text-decoration: none;
+         color: black;
+        }
+
+        .column {
+            display: none;
+        }
+
+        .column.show {
+            display: block;
+        }
+
+        .content {
+            margin: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
-<body background="firefilesgif.gif">
+<body>
 
-<!-- MAIN (Center website) -->
 <div class="main">
+    <h1>GROUP DISCUSSION</h1>
+    <hr>
+    <h2>Topics</h2>
 
-<h1 style="color: aqua;">GROUP DISCUSSION</h1>
-<hr>
-
-<h2 style="color: skyblue;">Topics</h2>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> show all</button>
-  <button class="btn" onclick="filterSelection('social')">Social problem</button>
-  <button class="btn" onclick="filterSelection('education')">Education</button>
-  <button class="btn" onclick="filterSelection('sports')"> sports</button>
-  <button class="btn" onclick="filterSelection('politics')"> Politics</button>
-  <button class="btn" onclick="filterSelection('new topics')"> New Topics</button>
-  <button class="btn" onclick="filterSelection('current topics')"> Current Topics</button>
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="column cars">
-  <div class="content">
-      <img src="social.jpg" alt="social" style="width:100%";>
-      <h4>Social Topics
-        politics <button>clickhere
-          <ul>
-            <li><a href="sociallink.html">click</a></li>
-            
-        </ul>
-        </button>
-      </h4>
-          </div>
-</body>
- </html>   
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show All</button>
+        <button class="btn" onclick="filterSelection('social')">Social Problem</button>
+        <button class="btn" onclick="filterSelection('education')">Education</button>
+        <button class="btn" onclick="filterSelection('sports')">Sports</button>
+        <button class="btn" onclick="filterSelection('politics')">Politics</button>
+        <button class="btn" onclick="filterSelection('new topics')">New Topics</button>
+        <button class="btn" onclick="filterSelection('current topics')">Current Topics</button>
     </div>
-  </div>
-</div>
 
-<div class="column cars">
-  <div class="content">
-    <img src="education.gif" alt="education" style="width: 30%";>
-      <h4>Education
-         <button>clickhere
-          <ul>
-            <li><a href="educationlink.html">click</a></li>
-            
-        </ul>
-        </button>
-        </h4>
-         </div>
-         
-           
-  <div class="column cars">
-    <div class="content">
-      <img src="politics.gif" alt="politics" style="width:100%">
-      <h4>politics <button>clickhere
-        <ul>
-          <li><a href="politics click.html">click</a></li>
-          
-      </ul>
-      </button> </h4>
-
-
-     
-  <div class="column cars">
-    <div class="content">
-    <img src="current.gif" alt="current topics" style="width:100%">
-    <h4>current topics <button>clickhere
-      <ul>
-        <li><a href="currentopic.html">click</a></li>
-        
-    </ul>
-    </button> </h4>
-      
+    <!-- Portfolio Gallery Grid -->
+    <div class="column cars show">
+        <div class="content">
+            <img src="social.jpg" alt="social">
+            <h4>Social Topics</h4>
+            <button class="btn active"><a href="sociallink.html">Click</a></button>
+        </div>
     </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="new.gif" alt="new topic" style="width:100%">
-      <h4>New topic <button>clickhere
-      <ul>
-        <li><a href="newtopic.html">click</a></li>
-        
-    </ul>
-    </button> </h4>
-      
+
+    <div class="column cars">
+        <div class="content">
+            <img src="education.gif" alt="education">
+            <h4>Education</h4>
+            <button class="btn"><a href="educationlink.html">Click</a></button>
+        </div>
     </div>
-  </div>
 
-  
-<!-- END GRID -->
-</div>
+    <div class="column cars">
+        <div class="content">
+            <img src="politics.gif" alt="politics">
+            <h4>Politics</h4>
+            <button class="btn"><a href="politicsclick.html">Click</a></button>
+        </div>
+    </div>
 
-<!-- END MAIN -->
+    <div class="column cars">
+        <div class="content">
+            <img src="current.gif" alt="current topics">
+            <h4>Current Topics</h4>
+            <button class="btn"><a href="currentopic.html">Click</a></button>
+        </div>
+    </div>
+
+    <div class="column cars">
+        <div class="content">
+            <img src="new.gif" alt="new topic">
+            <h4>New Topic</h4>
+            <button class="btn"><a href="newtopic.html">Click</a></button>
+        </div>
+    </div>
 </div>
 
 <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+    filterSelection("all");
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c === "all") {
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.add("show");
+            }
+        } else {
+            for (i = 0; i < x.length; i++) {
+                if (x[i].id === c + 'Div') {
+                    x[i].classList.add("show");
+                } else {
+                    x[i].classList.remove("show");
+                }
+            }
+        }
     }
-  }
-  element.className = arr1.join(" ");
-}
 
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
 
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.querySelector(".btn.active");
+            current.classList.remove("active");
+            this.classList.add("active");
+        });
+    }
 </script>
 
 </body>
 </html>
-
-
